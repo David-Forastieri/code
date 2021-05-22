@@ -1,0 +1,68 @@
+body {
+  background-color: rgb(236, 237, 245);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  min-width: 100vh;
+}
+
+button {
+  padding: 0;
+  margin-right: 20px;
+}
+
+button img {
+  max-width: 400px;
+  max-height: 400px;
+}
+
+.text_info {
+  max-width: 50%;
+}
+
+#close {
+  background-color: red;
+  color: #fff;
+  width: 20px;
+  height: 20px;
+  border-radius: 60px;
+  position: absolute;
+  top: 8px;
+  right: 5px;
+}
+
+.modal_container {
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.596);
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+
+  /*CON POINTER-EVENTS CONTROLO LOS EVENTOS DEL CURSOR*/
+  pointer-events: none;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+/*CON ESTA CLASE HAGO APARECER EL MODAL AL HACER CLICK*/
+.show {
+  pointer-events: auto;
+  opacity: 1;
+}
+
+.modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  background-color: #fff;
+  max-width: 100%;
+  padding: 30px 50px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
